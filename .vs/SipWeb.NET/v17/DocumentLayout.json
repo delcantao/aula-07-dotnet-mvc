@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repos\\sandbox\\SipWeb.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\dataaccess\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:dataaccess\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\models\\resultadobuscacep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:models\\resultadobuscacep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\wwwroot\\css\\lf.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:wwwroot\\css\\lf.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|d:\\repos\\sandbox\\sipweb.net\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE48DC2B-E64A-483B-96DF-FAB586A22674}|SipWeb.NET.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\DataAccess\\DbContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DbContext.cs",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\DataAccess\\DbContext.cs",
+              "RelativeToolTip": "DataAccess\\DbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T12:11:56.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultadoBuscaCep.cs",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\Models\\ResultadoBuscaCep.cs",
+              "RelativeDocumentMoniker": "Models\\ResultadoBuscaCep.cs",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\Models\\ResultadoBuscaCep.cs",
+              "RelativeToolTip": "Models\\ResultadoBuscaCep.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T18:43:16.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T18:42:01.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-10T18:35:16.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACIBAAAAAAAAAAAAACwBAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T18:32:09.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAEEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T18:26:27.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "lf.html",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\wwwroot\\css\\lf.html",
+              "RelativeDocumentMoniker": "wwwroot\\css\\lf.html",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\wwwroot\\css\\lf.html",
+              "RelativeToolTip": "wwwroot\\css\\lf.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-10T18:23:51.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\repos\\sandbox\\SipWeb.NET\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\repos\\sandbox\\SipWeb.NET\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-10T18:22:04.16Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
