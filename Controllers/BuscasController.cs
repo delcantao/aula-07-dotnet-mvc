@@ -4,19 +4,24 @@ using System.Diagnostics;
 
 namespace SipWeb.NET.Controllers
 {
-    public class HomeController : Controller
+    
+    // [Route("consultas-enriquecimento-cadastral")]
+    public class BuscasController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<BuscasController> _logger;
 
         public ResultadoBuscaCep busca { get; set; }
 
-        public HomeController(ILogger<HomeController> logger)
+        public BuscasController(ILogger<BuscasController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        
+        // [Route("busca-cep")]
+        public IActionResult Cep()
         {
+            var cep = ""; 
             var irNobcao = new ResultadoBuscaCep
             {
                 Tipo = "RUAAAA",
@@ -26,7 +31,7 @@ namespace SipWeb.NET.Controllers
 			return View(irNobcao);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Cpf()
         {
             return View();
         }

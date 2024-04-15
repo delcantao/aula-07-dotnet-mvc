@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Sandbox\bin\Debug\net8.0\Sandbox.deps.json" />
+    <_ContentIncludedByDefault Remove="Sandbox\bin\Debug\net8.0\Sandbox.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="Sandbox\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="Sandbox\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="Sandbox\obj\Sandbox.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
 </Project>
