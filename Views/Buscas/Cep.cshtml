@@ -14,9 +14,8 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
 		</div>
-	</div>
-	Tipo: @Model.Tipo
-	<form class="actExecutarFormCepAjax semMargin" method="post" action="https://sipweb6.sistemasth.com.br/sipweb/inc/ajax-ws.php">
+	</div> 
+	<form id="formCep" class="actExecutarFormCepAjax semMargin" method="post">
 		<div>
 			<input type="hidden" name="f" value="ajaxGetCep" />
 			<input type="hidden" name="elementoLoad" value="resultados" />
@@ -31,22 +30,73 @@
 		<br />
 		<div class="col-1-1 pr0">
 			<label for="cep" class="im">CEP</label><br />
-			<input type="text" maxlength="20" id="txtBscCep" name="txtBscCep" class="im customSize" value="02422170" />
+			<input type="text" maxlength="20"   id="campo-cep" name="cep" class="im customSize" value="" />
 			<input type="submit" value="Buscar" id="buscar" class="linka im hovop" style="border-radius: 5px;" />
 			<input type="button" value="Limpar" id="limpar" class="linkb im hovop actLimparFormAjax" style="border-radius: 5px;" />
 		</div>
-		<span id="spanins" class="insucesso-buscas im mgr"></span>
+		@* @if (!string.IsNullOrEmpty(Model.ErrorMessage)) *@
+		@* { *@
+			
+			<span id="spanins" class="insucesso-buscas im mgr" style="display: none"></span>
+		@* } *@
 		<div class="ar frm-set-btn fn">
 			<div class="loading-btn"></div>
 		</div>
 	</form>
-
-	<div id="container-resultados" style="display:block;">
-		<div id="container-resultados-load">
-			<div class="resultados">
-				<h2>Endereços <div style="float: right;"> 1 Logradouro(s)</div></h2>
-				<table id="resultadosCEP" class="tablesorter">
-					<thead>
+	@* @if (string.IsNullOrEmpty(Model.ErrorMessage)) *@
+	@* { *@
+	@* 	 *@
+	@* 	<div id="container-resultados" style="display:block;"> *@
+	@* 		<div id="container-resultados-load"> *@
+	@* 			<div class="resultados"> *@
+	@* 				<h2>Endereços <div style="float: right;"> 1 Logradouro(s)</div></h2> *@
+	@* 				<table id="resultadosCEP" class="tablesorter"> *@
+	@* 					<thead> *@
+	@* 					<tr> *@
+	@* 						<th style="padding-left: 2px;">Tipo</th> *@
+	@* 						<th style="padding-left: 2px;">Endereço</th> *@
+	@* 						<th align="center" style="text-align: center;">De</th> *@
+	@* 						<th align="center" style="text-align: center;">Até</th> *@
+	@* 						<th style="padding-left: 2px;">Lado</th> *@
+	@* 						<th style="padding-left: 2px;">Bairro</th> *@
+	@* 						<th style="padding-left: 2px;">Cidade</th> *@
+	@* 						<th align="center" style="text-align: center;">UF</th> *@
+	@* 						<th style="padding-left: 2px;">CEP</th> *@
+	@* 						<th style="padding-left: 2px;">Observações</th> *@
+	@* 					</tr> *@
+	@* 					</thead> *@
+	@* 					<tbody> *@
+	@* *@
+	@* 					<tr class=""> *@
+	@* 						<td><span>@Model.Tipo</span></td> *@
+	@* 						<td><span>@Model.Endereco</span></td> *@
+	@* 						<td align="center"><span>@Model.De</span></td> *@
+	@* 						<td align="center"><span>@Model.Ate</span></td> *@
+	@* 						<td align="left"><span>@Model.Lado</span></td> *@
+	@* 						<td align="left"><span>@Model.Bairro</span></td> *@
+	@* 						<td align="left"><span>@Model.Cidade</span></td> *@
+	@* 						<td align="center"><span>@Model.UF</span></td> *@
+	@* 						<td align="left"><span>@Model.CEP</span></td> *@
+	@* 						<td><span class="min">@Model.Obs</span></td> *@
+	@* 					</tr> *@
+	@* 					</tbody> *@
+	@* 				</table> *@
+	@* 			</div><!-- Fim resultados enderecos --> *@
+	@* 			<br /> *@
+	@* 			<span class="tempo-carregamento">Tempo de pesquisa interna: 0.204 seg</span> *@
+	@* 		</div> *@
+	@* 	</div> *@
+	@* 	 *@
+	@* } *@
+	
+	 
+		
+		<div id="container-resultados" style="display:none;">
+			<div id="container-resultados-load">
+				<div class="resultados">
+					<h2>Endereços <div style="float: right;"> 1 Logradouro(s)</div></h2>
+					<table id="resultadosCEP" class="tablesorter">
+						<thead>
 						<tr>
 							<th style="padding-left: 2px;">Tipo</th>
 							<th style="padding-left: 2px;">Endereço</th>
@@ -59,26 +109,82 @@
 							<th style="padding-left: 2px;">CEP</th>
 							<th style="padding-left: 2px;">Observações</th>
 						</tr>
-					</thead>
-					<tbody>
+						</thead>
+						<tbody>
 
-						<tr class="">
-							<td><span>@Model.Tipo</span></td>
-							<td><span>@Model.Endereco</span></td>
-							<td align="center"><span>@Model.De</span></td>
-							<td align="center"><span>@Model.Ate</span></td>
-							<td align="left"><span>@Model.Lado</span></td>
-							<td align="left"><span>@Model.Bairro</span></td>
-							<td align="left"><span>@Model.Cidade</span></td>
-							<td align="center"><span>@Model.UF</span></td>
-							<td align="left"><span>@Model.CEP</span></td>
-							<td><span class="min">@Model.Obs</span></td>
+						<tr id="result-tr">
+						 
 						</tr>
-					</tbody>
-				</table>
-			</div><!-- Fim resultados enderecos -->
-			<br />
-			<span class="tempo-carregamento">Tempo de pesquisa interna: 0.204 seg</span>
+						</tbody>
+					</table>
+				</div><!-- Fim resultados enderecos -->
+				<br />
+				<span class="tempo-carregamento">Tempo de pesquisa interna: 0.204 seg</span>
+			</div>
 		</div>
-	</div>
+		 
 </div>
+<script>
+
+	$("#buscar").on("click", async function (event) {
+		console.log('entrei')
+		event.preventDefault();
+
+		const inputCep = $("#campo-cep").val();
+		
+		
+		const res = await fetch(`/Buscas/CepJson?cep=${inputCep}`)
+		const json = await res.json();	 
+		
+		const tr = document.getElementById("result-tr");
+		tr.innerHTML = "";
+		
+		const tipo = document.createElement("td");
+		const endereco = document.createElement("td");
+		const de = document.createElement("td");
+		const ate = document.createElement("td");
+		const lado = document.createElement("td");
+		const bairro = document.createElement("td");
+		const cidade = document.createElement("td");
+		const uf = document.createElement("td");
+		const cep = document.createElement("td");
+		const obs = document.createElement("td");				
+		
+		tipo.innerHTML = json.tipo
+		endereco.innerHTML = json.endereco
+		de.innerHTML = json.de
+		ate.innerHTML = json.ate
+		lado.innerHTML = json.lado
+		bairro.innerHTML = json.bairro
+		cidade.innerHTML = json.cidade
+		uf.innerHTML = json.uf
+		cep.innerHTML = json.cep
+		obs.innerHTML = json.obs
+		
+		
+		tr.appendChild(tipo)
+		tr.appendChild(endereco)
+		tr.appendChild(de)
+		tr.appendChild(ate)
+		tr.appendChild(lado)
+		tr.appendChild(bairro)
+		tr.appendChild(cidade)
+		tr.appendChild(uf)
+		tr.appendChild(cep)
+		tr.appendChild(obs)
+         
+		if (json.errorMessage != null) {
+			document.getElementById("container-resultados").style.display = "none";
+			document.getElementById("spanins").innerHTML = json.errorMessage;
+			document.getElementById("spanins").style.display = "inline";
+		} else {
+			document.getElementById("container-resultados").style.display = "block";
+			
+		}
+
+	}); 
+
+	
+	console.log('oi')
+	
+</script>

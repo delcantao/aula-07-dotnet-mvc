@@ -12,5 +12,7 @@
 		public string UF { get; set; }
 		public string CEP { get; set; }
 		public string Obs { get; set; }
+		public string ErrorMessage { get; set; }
+		
 	}
 }
